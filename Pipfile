@@ -1,0 +1,39 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# 机器学习常用库
+numpy = "*"
+pandas = "*"
+scipy = "*"
+scikit-learn = "*"
+jupyterlab = "*"
+# 绘图
+matplotlib = "*"
+seaborn = "*"
+# pytorch
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+# NLP
+pynlpir = "*"
+
+# 图像处理
+opencv-python = "*"
+
+# 数据处理
+python-docx = "*"
+openpyxl = "*"
+# 其他
+reportlab = "*"
+flask = "*"
+celery = "*"
+
+
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
