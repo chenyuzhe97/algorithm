@@ -4,13 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-# 机器学习常用库
+# machine learning
 numpy = "*"
 pandas = "*"
 scipy = "*"
 scikit-learn = "*"
 jupyterlab = "*"
-# 绘图
+# plot
 matplotlib = "*"
 seaborn = "*"
 # pytorch
@@ -19,18 +19,15 @@ torchvision = "*"
 torchaudio = "*"
 # NLP
 pynlpir = "*"
-
-# 图像处理
+# Image processing
 opencv-python = "*"
-
-# 数据处理
+# file processing
 python-docx = "*"
 openpyxl = "*"
-# 其他
 reportlab = "*"
+# other
 flask = "*"
 celery = "*"
-
 
 
 [dev-packages]
