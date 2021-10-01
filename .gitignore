@@ -24,6 +24,7 @@ venv
 
 #测试用的文件
 tests
+app/tests
 
 #缓存文件
 app/temp
@@ -33,3 +34,7 @@ app/logs
 
 #用户文件
 app/users
+
+#jupyter缓存
+.ipynb_checkpoints
+*/.ipynb_checkpoints

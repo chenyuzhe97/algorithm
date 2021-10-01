@@ -14,9 +14,12 @@
 __auth__ = 'diklios'
 
 import numpy as np
+
 import fractions
 
 # 设置显示为分数
 np.set_printoptions(formatter={'all': lambda x: str(fractions.Fraction(x).limit_denominator())})
+# 数组转矩阵
+# np.array()
 # 矩阵的逆
-np.linalg.inv()
+# np.linalg.inv()
