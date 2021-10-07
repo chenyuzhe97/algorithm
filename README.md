@@ -9,13 +9,15 @@
         * 如果网络连接不上，建议更改终端代理或者对pip进行换源
         * 如果提示没有python某版本，在Pipfile文件最后更改
 ## 参考资料
-
-* github项目
-    * [ML-notes](https://github.com/Sakura-gh/ML-notes)
-    * [AI learning](https://github.com/apachecn/AiLearning)
-    * [斯坦福大学2014（吴恩达）机器学习教程中文笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
-* 课程
-    * [吴恩达机器学习系列课程](https://www.bilibili.com/video/BV164411b7dx)
-    * [李宏毅2020机器学习深度学习](https://www.bilibili.com/video/BV1JE411g7XF)
-    * [李宏毅《机器学习/深度学习》2021课程](https://www.bilibili.com/video/BV1JA411c7VT)
-    * [吴恩达深度学习](https://www.bilibili.com/video/BV1FT4y1E74V)
+* 机器学习和深度学习
+  * github项目
+      * [ML-notes](https://github.com/Sakura-gh/ML-notes)
+      * [AI learning](https://github.com/apachecn/AiLearning)
+      * [斯坦福大学2014（吴恩达）机器学习教程中文笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
+  * 课程
+      * [吴恩达机器学习系列课程](https://www.bilibili.com/video/BV164411b7dx)
+      * [李宏毅2020机器学习深度学习](https://www.bilibili.com/video/BV1JE411g7XF)
+      * [李宏毅《机器学习/深度学习》2021课程](https://www.bilibili.com/video/BV1JA411c7VT)
+      * [吴恩达深度学习](https://www.bilibili.com/video/BV1FT4y1E74V)
+* 生信
+  * [B站生信技能书](https://www.bilibili.com/video/BV1cs411j75B)
