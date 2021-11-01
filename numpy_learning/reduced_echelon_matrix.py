@@ -64,4 +64,10 @@ def rsmat(arbmat):
 
 
 # 使用sympy
-rref = Matrix(np.array([[1, -1, 2, 1], [2, 1, -1, -1], [1, 1, 0, 3], [0, 1, 1, 7]])).rref()[0].tolist()
+rref = Matrix(np.array([
+    [1, 0, 3, 2],
+    [1, 2, 1, -4],
+    [1, 1, 0, -3],
+    [2, 3, 1, -7]
+])).rref()[0].tolist()
+print(rref)
