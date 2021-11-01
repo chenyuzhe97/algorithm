@@ -16,6 +16,7 @@ __auth__ = 'diklios'
 import numpy as np
 from sympy import *
 
+
 # 行最简
 # 使用numpy
 def rsmat(arbmat):
@@ -60,8 +61,6 @@ def rsmat(arbmat):
                         arbmat[i, m] * arbmat[-1, :]
                 break
         return arbmat
-
-
 
 
 # 使用sympy
