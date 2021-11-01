@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+# base
+cryptography = "*"
 # machine learning
 numpy = "*"
 pandas = "*"
@@ -25,12 +27,12 @@ pynlpir = "*"
 # Image processing
 opencv-python = "*"
 # file processing
-python-docx = "*"
-openpyxl = "*"
-reportlab = "*"
+#python-docx = "*"
+#openpyxl = "*"
+#reportlab = "*"
 # other
-flask = "*"
-celery = "*"
+#flask = "*"
+#celery = "*"
 
 
 [dev-packages]
