@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 # base
+requests = "*"
 cryptography = "*"
 # machine learning
 numpy = "*"
@@ -28,7 +29,7 @@ pynlpir = "*"
 opencv-python = "*"
 # file processing
 #python-docx = "*"
-#openpyxl = "*"
+openpyxl = "*"
 #reportlab = "*"
 # other
 #flask = "*"
@@ -36,6 +37,14 @@ opencv-python = "*"
 
 
 [dev-packages]
+autopep8 = "*"
+flake8 = "*"
+pylint = "*"
+faker = "*"
+watchdog = "*"
+pysnooper = "*"
+pytest = "*"
+flask-testing = "*"
 
 [requires]
 python_version = "3.9"
