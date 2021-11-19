@@ -49,6 +49,9 @@
         * [zhangxiann/Pytorch](https://github.com/zhangxiann/PyTorch_Practice)
 * 生信
     * [B站生信技能书](https://www.bilibili.com/video/BV1cs411j75B)
+* 算法
+    * LeetCode
+        * [labuladong的算法小抄](https://github.com/labuladong/fucking-algorithm)
 
 ## 文档
 
