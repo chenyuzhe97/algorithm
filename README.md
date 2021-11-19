@@ -4,7 +4,7 @@
 <a href="https://github.com/diklios5768" target="_blank">
 <img alt="Github" src="https://img.shields.io/badge/作者-@diklios-000000.svg?style=flat-square&logo=GitHub">
 </a>
-<a href="**https://github.com/diklios5768/**algorithm" target="_blank">
+<a href="**https://github.com/diklios5768/algorithm" target="_blank">
 <img alt="GitHub" src="https://img.shields.io/github/stars/diklios5768/algorithm?label=Stars&style=flat-square&logo=GitHub">
 </a>
 </p>
