@@ -13,6 +13,16 @@
 
 * 安装python（推荐3.6以上的版本）
 * 在终端中输入：`pip install pipenv`
+* 设置环境变量
+    * 创建.env文件
+```dotenv
+#可以使用PIPENV_VENV_IN_PROJECT环境变量让环境创建在当前项目目录下
+PIPENV_VENV_IN_PROJECT=1
+#保持其他包不更新，因为pipenv install/update 会默认更新所有包
+PIPENV_KEEP_OUTDATED=1
+#默认不清除缓存
+PIPENV_CLEAR=0
+```
 * 进入到当前项目文件夹，运行命令：`pipenv install`
     * 如果保错请安装`c++ build tools 14`以上的版本（一般在报错的终端提示中会有链接）
         * 或者直接安装visual studio 2017以上的版本，选择c++工具包
