@@ -1,13 +1,14 @@
-# 用于测试算法的项目
+# 用于学习和测试算法的项目
 
-* 安装环境
-    * 安装python（推荐3.6以上的版本）
-    * 在终端中输入：`pip install pipenv`
-    * 进入到当前项目文件夹，运行命令：`pipenv install`
-        * 如果保错请安装`c++ build tools 14`以上的版本（一般在报错的终端提示中会有链接）
-            * 或者直接按照visual studio 2017以上的版本，选择c++工具包
-        * 如果网络连接不上，建议更改终端代理或者对pip进行换源
-        * 如果提示没有python某版本，在Pipfile文件最后更改
+## 安装环境
+
+* 安装python（推荐3.6以上的版本）
+* 在终端中输入：`pip install pipenv`
+* 进入到当前项目文件夹，运行命令：`pipenv install`
+    * 如果保错请安装`c++ build tools 14`以上的版本（一般在报错的终端提示中会有链接）
+        * 或者直接安装visual studio 2017以上的版本，选择c++工具包
+    * 如果网络连接不上，建议更改终端代理或者对pip进行换源
+    * 如果提示没有python某版本，在Pipfile文件最后更改，默认是3.9
 
 ## 参考资料
 
@@ -33,5 +34,11 @@
         * 周志华的《机器学习》
         * 神经网络与深度学习，邱锡鹏，在线版：https://nndl.github.io/
         * 《深度学习》（花书）
+        * [机器学习基础在线版](https://mitpress.ublish.com/ereader/7093/?preview=#page/1)
+        * 下载PDF：https://cs.nyu.edu/~mohri/mlbook/
 * 生信
     * [B站生信技能书](https://www.bilibili.com/video/BV1cs411j75B)
+
+## 文档
+
+* [版本更新](docs/version.md)

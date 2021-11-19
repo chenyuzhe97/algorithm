@@ -2,7 +2,7 @@
 """
 @File Name      :   reduced_echelon_matrix.py    
 @Create Time    :   2021/9/25 9:18
-@Description    :   
+@Description    :   echelon matrix(阶梯形矩阵)
 @Version        :   
 @License        :   
 @Author         :   diklios
@@ -14,10 +14,10 @@
 __auth__ = 'diklios'
 
 import numpy as np
-from sympy import *
+from sympy import Matrix
 
 
-# 行最简
+# 化为行最简
 # 使用numpy
 def rsmat(arbmat):
     """ Convert an arbitrary matrix to a simplest matrix """

@@ -3,8 +3,20 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+verify_ssl = true
+name = "aliyun"
+
+[[source]]
+url = "https://pypi.douban/simple"
+verify_ssl = true
+name = "douban"
+
 [packages]
 # base
+pipreqs = "*"
+python-dotenv = "*"
 requests = "*"
 cryptography = "*"
 # machine learning

@@ -38,13 +38,13 @@ two_dimensional_array = np.array([
 ])
 # 行排序
 row_sorted_array_index = np.argsort(two_dimensional_array, axis=1)
-row_sorted_array=np.take_along_axis(two_dimensional_array, row_sorted_array_index, axis=1)
+row_sorted_array = np.take_along_axis(two_dimensional_array, row_sorted_array_index, axis=1)
 # 列排序
 col_sorted_array_index = np.argsort(two_dimensional_array, axis=0)
-col_sorted_array=np.take_along_axis(two_dimensional_array, col_sorted_array_index, axis=0)
+col_sorted_array = np.take_along_axis(two_dimensional_array, col_sorted_array_index, axis=0)
 
 # 按指定行或列排序，不修改原数组，返回索引:https://numpy.org/devdocs/reference/generated/numpy.lexsort.html#numpy.lexsort
 # 输入一个列表，每一个元素是原数组的某行或某列(从0开始)，写法就是切片
 # 使用-1*元素代表降序，优先级是列表从后往前
 sorted_array_by_col_1_index = np.lexsort([two_dimensional_array[:, 2]])
-sorted_array_by_col_1=two_dimensional_array[sorted_array_by_col_1_index]
+sorted_array_by_col_1 = two_dimensional_array[sorted_array_by_col_1_index]

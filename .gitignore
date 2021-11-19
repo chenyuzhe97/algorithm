@@ -24,17 +24,14 @@ venv
 
 #测试用的文件
 tests
-app/tests
 
-#缓存文件
-app/temp
-
-#日志文件
-app/logs
-
-#用户文件
-app/users
+#应用开发
+app
 
 #jupyter缓存
 .ipynb_checkpoints
 */.ipynb_checkpoints
+
+#NodeJS环境
+node_modules
+*/node_modules
