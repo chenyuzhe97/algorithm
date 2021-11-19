@@ -25,6 +25,7 @@ pandas = "*"
 scipy = "*"
 sympy = "*"
 scikit-learn = "*"
+keras = "*"
 jupyterlab = "*"
 # plot
 matplotlib = "*"
@@ -36,9 +37,13 @@ torchaudio = "*"
 # TensorFlow
 tensorflow = "*"
 # NLP
+nltk = "*"
 pynlpir = "*"
+gensim = "*"
+pypinyin = "*"
 # Image processing
 opencv-python = "*"
+pillow = "*"
 # file processing
 #python-docx = "*"
 openpyxl = "*"
