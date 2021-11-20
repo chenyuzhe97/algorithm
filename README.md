@@ -15,6 +15,7 @@
 * 在终端中输入：`pip install pipenv`
 * 设置环境变量
     * 创建.env文件
+
 ```dotenv
 #可以使用PIPENV_VENV_IN_PROJECT环境变量让环境创建在当前项目目录下
 PIPENV_VENV_IN_PROJECT=1
@@ -23,6 +24,7 @@ PIPENV_KEEP_OUTDATED=1
 #默认不清除缓存
 PIPENV_CLEAR=0
 ```
+
 * 进入到当前项目文件夹，运行命令：`pipenv install`
     * 如果保错请安装`c++ build tools 14`以上的版本（一般在报错的终端提示中会有链接）
         * 或者直接安装visual studio 2017以上的版本，选择c++工具包
@@ -44,23 +46,19 @@ PIPENV_CLEAR=0
             * 李沐的《动手学深度学习》在线版
                 * http://zh.d2l.ai/
                 * https://zh-v2.d2l.ai/
-        
     * 课程
         * [吴恩达机器学习系列课程](https://www.bilibili.com/video/BV164411b7dx)
         * [李宏毅2020版机器学习深度学习](https://www.bilibili.com/video/BV1JE411g7XF)
         * [李宏毅《机器学习/深度学习》2021版课程](https://www.bilibili.com/video/BV1JA411c7VT)
         * [吴恩达深度学习](https://www.bilibili.com/video/BV1FT4y1E74V)
-    
     * 书籍
-      * 周志华的《机器学习》
-      * 神经网络与深度学习，邱锡鹏，在线版：https://nndl.github.io/
-      * 《深度学习》（花书）
-      * [机器学习基础在线版](https://mitpress.ublish.com/ereader/7093/?preview=#page/1)
-        * 下载PDF：https://cs.nyu.edu/~mohri/mlbook/
-    
+        * 周志华的《机器学习》
+        * 神经网络与深度学习，邱锡鹏，在线版：https://nndl.github.io/
+        * 《深度学习》（花书）
+        * [机器学习基础在线版](https://mitpress.ublish.com/ereader/7093/?preview=#page/1)
+            * 下载PDF：https://cs.nyu.edu/~mohri/mlbook/
     * 别人的资料（笔记代码）
-      * [zhangxiann/Pytorch](https://github.com/zhangxiann/PyTorch_Practice)
-
+        * [zhangxiann/Pytorch](https://github.com/zhangxiann/PyTorch_Practice)
 * 生信
     * [B站生信技能书](https://www.bilibili.com/video/BV1cs411j75B)
 * 算法
