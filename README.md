@@ -46,8 +46,8 @@ PIPENV_CLEAR=0
                 * https://zh-v2.d2l.ai/
     * 课程
         * [吴恩达机器学习系列课程](https://www.bilibili.com/video/BV164411b7dx)
-        * [李宏毅2020机器学习深度学习](https://www.bilibili.com/video/BV1JE411g7XF)
-        * [李宏毅《机器学习/深度学习》2021课程](https://www.bilibili.com/video/BV1JA411c7VT)
+        * [李宏毅2020版机器学习深度学习](https://www.bilibili.com/video/BV1JE411g7XF)
+        * [李宏毅《机器学习/深度学习》2021版课程](https://www.bilibili.com/video/BV1JA411c7VT)
         * [吴恩达深度学习](https://www.bilibili.com/video/BV1FT4y1E74V)
     * 书籍
         * 周志华的《机器学习》
