@@ -17,6 +17,7 @@ __auth__ = 'diklios'
 import random
 
 import numpy as np
+from .mnist_load_data import *
 
 
 def sigmoid(z: float or np.array):
@@ -175,3 +176,9 @@ class Network(object):
                 print("Epoch {0}: {1} / {2}".format(j, self.evaluate(test_data), n_test))
             else:
                 print("Epoch {0} complete".format(j))
+
+
+if __name__ == '__main__':
+    training_data, validation_data, test_data = load_data_wrapper()
+    net = Network([784, 30, 10])
+    net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
