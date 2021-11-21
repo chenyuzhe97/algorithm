@@ -36,6 +36,7 @@ torchvision = "*"
 torchaudio = "*"
 # TensorFlow
 tensorflow = "*"
+tensorwatch = "*"
 # NLP
 nltk = "*"
 pynlpir = "*"
