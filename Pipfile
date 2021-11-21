@@ -7,11 +7,22 @@ name = "pypi"
 #url = "https://mirrors.aliyun.com/pypi/simple"
 #verify_ssl = true
 #name = "aliyun"
-#
+
 #[[source]]
-#url = "https://pypi.douban/simple"
+#url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+#verify_ssl = true
+#name = "tsinghua"
+
+#[[source]]
+#url = "https://pypi.mirrors.ustc.edu.cn/simple"
+#verify_ssl = true
+#name = "ustc"
+
+#[[source]]
+#url = "https://pypi.doubanio.com/simple"
 #verify_ssl = true
 #name = "douban"
+
 
 [packages]
 # base
@@ -34,6 +45,7 @@ seaborn = "*"
 torch = "*"
 torchvision = "*"
 torchaudio = "*"
+torchsummary = "*"
 # TensorFlow
 tensorflow = "*"
 tensorwatch = "*"
