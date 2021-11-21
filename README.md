@@ -13,16 +13,18 @@
 
 * 安装python（推荐3.6以上的版本，且附带pip）
 * 在终端中输入：`pip install pipenv`
-    * 尽量能够使用代理
-    * 如果不方便使用代理，请百度`pip`换源教程
-    * 最后在`Pipfile`文件中注释`pypi`源，换为任意一个国内的源
+    * q请检查自己的网络情况，在国内的话尽量能够使用代理，否则非常慢
+    * 如果不方便使用代理，请百度`pip`换源教程，把`pipenv`包安装上就行
+    * 最后在`Pipfile`文件中注释`pypi`源的内容，换为任意一个国内的源（即取消注释）
+* 设置`Pipfile`
+    * 本项目默认是python3.9版本，可以在文件最后的`python_version`部分修改为你安装的版本
 
 * 设置环境变量
-    * 创建.env文件
+    * 创建`.env`文件
     * 文件内容参考如下：
 
 ```dotenv
-#可以使用PIPENV_VENV_IN_PROJECT环境变量让环境创建在当前项目目录下
+#让环境创建在当前项目目录下，否则默认是用户文件夹下的.virtualenvs文件夹
 PIPENV_VENV_IN_PROJECT=1
 #保持其他包不更新，因为pipenv install/update 会默认更新所有包
 PIPENV_KEEP_OUTDATED=1
@@ -30,11 +32,11 @@ PIPENV_KEEP_OUTDATED=1
 PIPENV_CLEAR=0
 ```
 
+* 检查自己的编译环境
+    * 请安装`c++ build tools 14`以上的版本（一般在安装报错的终端提示中会有链接）
+        * 或者直接安装visual studio 2017以上的版本，选择c++开发环境
+    
 * 进入到当前项目文件夹，运行命令：`pipenv install`
-    * 如果保错请安装`c++ build tools 14`以上的版本（一般在报错的终端提示中会有链接）
-        * 或者直接安装visual studio 2017以上的版本，选择c++工具包
-    * 如果网络连接不上，建议更改终端代理或者对pip进行换源
-    * 如果提示没有python某版本，在Pipfile文件最后更改，默认是3.9
 
 ## 参考资料
 
