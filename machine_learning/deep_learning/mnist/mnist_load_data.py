@@ -54,9 +54,9 @@ def vectorized_result(j):
     (0...9) into a corresponding desired output from the neural
     network.
     """
-    e = np.zeros((10, 1))
-    e[j] = 1.0
-    return e
+    e = np.zeros((10, 1))    # 构造一个[0,0,0,0,0,0,0,0,0,0]向量
+    e[j] = 1.0               
+    return e                 
 
 
 def load_data_wrapper():
@@ -80,11 +80,11 @@ def load_data_wrapper():
     code.
     """
     tr_d, va_d, te_d = load_data()
-    training_inputs = [np.reshape(x, (784, 1)) for x in tr_d[0]]
-    training_results = [vectorized_result(y) for y in tr_d[1]]
-    training_data = list(zip(training_inputs, training_results))
-    validation_inputs = [np.reshape(x, (784, 1)) for x in va_d[0]]
+    training_inputs = [np.reshape(x, (784, 1)) for x in tr_d[0]]      
+    training_results = [vectorized_result(y) for y in tr_d[1]]        # vectorized_result(y)代表最后输出的向量 tr_d[0]中每一输入与tr_d[1]的输出值向量对应
+    training_data = list(zip(training_inputs, training_results))      # 将训练集的输入和输出打包
+    validation_inputs = [np.reshape(x, (784, 1)) for x in va_d[0]]    # validation_inputs 暂时用不到
     validation_data = list(zip(validation_inputs, va_d[1]))
     test_inputs = [np.reshape(x, (784, 1)) for x in te_d[0]]
-    test_data = list(zip(test_inputs, te_d[1]))
+    test_data = list(zip(test_inputs, te_d[1]))                       # 将测试集的输入和输出打包
     return training_data, validation_data, test_data
