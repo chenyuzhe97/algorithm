@@ -6,7 +6,13 @@
   - 作者的个人官网： <http://michaelnielsen.org/>
   - 原项目是：<https://github.com/mnielsen/neural-networks-and-deep-learning>
 - 学习必看
+  - 梯度下降
+    - [一文简述深度学习优化方法——梯度下降](https://zhuanlan.zhihu.com/p/39842768)
+    - [梯度下降的可视化解释(Momentum，AdaGrad，RMSProp，Adam)](https://zhuanlan.zhihu.com/p/147275344)
+    - [梯度下降法和牛顿法释疑](https://zhuanlan.zhihu.com/p/419878440)
+
   - 到底如何理解反向传播：<https://zhuanlan.zhihu.com/p/40378224>
+
 
 ## 注意
 
