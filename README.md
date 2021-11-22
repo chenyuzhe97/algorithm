@@ -8,10 +8,14 @@
 <img alt="GitHub" src="https://img.shields.io/github/stars/diklios5768/algorithm?label=Stars&style=flat-square&logo=GitHub">
 </a>
 </p>
+## 说明
+
+* 本项目包含了大量常用的基础库、算法、机器学习和深度学习库，安装所有的环境会占用***4GB***以上的空间，**请酌情考虑是否要全部安装**
+  * 在`Pipfile`文件中注释不需要的库即可大幅度减少体积
 
 ## 安装环境
 
-- 安装 python（推荐 3.6 以上的版本，且附带 pip）
+- 安装 python（推荐 *3.6* 以上的版本，且附带 pip）
 - 在终端中输入：`pip install pipenv`
   - q 请检查自己的网络情况，在国内的话尽量能够使用代理，否则非常慢
   - 如果不方便使用代理，请百度`pip`换源教程，把`pipenv`包安装上就行
@@ -49,7 +53,7 @@ PIPENV_CLEAR=0
 ## 参考资料
 
 - 机器学习和深度学习
-  - Github 项目
+  - GitHub 项目
     - [ML-notes](https://github.com/Sakura-gh/ML-notes)
     - [AI learning](https://github.com/apachecn/AiLearning)
     - [斯坦福大学 2014（吴恩达）机器学习教程中文笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
@@ -72,7 +76,7 @@ PIPENV_CLEAR=0
     - 《深度学习》（花书）
     - [机器学习基础在线版](https://mitpress.ublish.com/ereader/7093/?preview=#page/1)
       - 下载 PDF：<https://cs.nyu.edu/~mohri/mlbook/>
-  - 别人的资料（笔记代码）
+  - 别人的资料（笔记、代码）
     - [zhangxiann/Pytorch](https://github.com/zhangxiann/PyTorch_Practice)
 - 生信
   - [B 站生信技能书](https://www.bilibili.com/video/BV1cs411j75B)
