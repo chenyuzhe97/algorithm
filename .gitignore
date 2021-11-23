@@ -6,32 +6,22 @@
 out
 gen
 
+#visual studio code的设置文件夹
+.vscode
+
 #python缓存
 __pycache__
 *.pyc
-
-#visual studio code设置文件夹
-.vscode
-
-#虚拟环境文件夹
-#virtual environment创建的
-venv
-#pipenv创建的虚拟环境文件夹
-.venv
-
-#本机环境变量
-.env
-
-#测试用的文件
-tests
-
-#应用开发
-app
 
 #jupyter缓存
 .ipynb_checkpoints
 */.ipynb_checkpoints
 
-#NodeJS环境
-node_modules
-*/node_modules
+#虚拟环境文件夹
+#virtual environment创建的环境文件夹
+venv
+#pipenv创建的环境文件夹
+.venv
+
+#本机环境变量
+.env
