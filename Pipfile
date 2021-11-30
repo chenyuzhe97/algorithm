@@ -37,7 +37,10 @@ scipy = "*"
 sympy = "*"
 scikit-learn = "*"
 keras = "*"
+# jupyter
 jupyterlab = "*"
+matlab-kernel ="*"
+
 # plot
 matplotlib = "*"
 seaborn = "*"
