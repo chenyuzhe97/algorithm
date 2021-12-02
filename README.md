@@ -89,3 +89,10 @@ PIPENV_CLEAR=0
 ## 文档
 
 - [版本更新](docs/version.md)
+
+
+
+## 待完成
+
+- 增加conda安装环境
+- numpy、pandas等学习内容更改为jupyter notebook文件
