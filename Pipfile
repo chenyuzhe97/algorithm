@@ -39,8 +39,6 @@ scikit-learn = "*"
 keras = "*"
 # jupyter
 jupyterlab = "*"
-matlab-kernel ="*"
-
 # plot
 matplotlib = "*"
 seaborn = "*"
@@ -60,6 +58,8 @@ pypinyin = "*"
 # Image processing
 opencv-python = "*"
 pillow = "*"
+# network
+networkx = "*"
 # file processing
 #python-docx = "*"
 openpyxl = "*"

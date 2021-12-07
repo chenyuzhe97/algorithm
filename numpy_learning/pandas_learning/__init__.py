@@ -13,3 +13,9 @@
 @other information
 """
 __auth__ = 'diklios'
+
+import matplotlib.pyplot as plt
+
+# 解决中文字体的问题，这样画图就可以显示了
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['font.family']='sans-serif'
