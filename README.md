@@ -98,6 +98,8 @@ PIPENV_CLEAR=0
       - 下载 PDF：<https://cs.nyu.edu/~mohri/mlbook/>
   - 别人的资料（笔记、代码）
     - [zhangxiann/Pytorch](https://github.com/zhangxiann/PyTorch_Practice)
+  - 学习过程参考
+    - [深度学习如何入门](https://www.zhihu.com/question/26006703/answer/536169538)
 - 生信
   - [B 站生信技能书](https://www.bilibili.com/video/BV1cs411j75B)
 - 算法
