@@ -69,6 +69,7 @@ openpyxl = "*"
 
 
 [dev-packages]
+pretty_errors = "*"
 autopep8 = "*"
 flake8 = "*"
 pylint = "*"

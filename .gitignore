@@ -1,5 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -142,8 +141,5 @@ gen
 #python缓存
 *.pyc
 
-#本机环境变量
-.env
-
-#测试用的文件
-tests
+#测试文件夹
+test
