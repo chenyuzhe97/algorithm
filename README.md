@@ -96,6 +96,7 @@ PIPENV_CLEAR=0
     - 《深度学习》（花书）
     - [机器学习基础在线版](https://mitpress.ublish.com/ereader/7093/?preview=#page/1)
       - 下载 PDF：<https://cs.nyu.edu/~mohri/mlbook/>
+    - [《机器学习公式推导及代码实现》的代码](https://github.com/luwill/Machine_Learning_Code_Implementation)
   - 别人的资料（笔记、代码）
     - [zhangxiann/Pytorch](https://github.com/zhangxiann/PyTorch_Practice)
 - 生信
