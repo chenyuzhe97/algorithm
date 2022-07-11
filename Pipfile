@@ -37,7 +37,7 @@ scipy = "*"
 sympy = "*"
 scikit-learn = "*"
 keras = "*"
-# jupyter
+jupyter = "*"
 jupyterlab = "*"
 # plot
 matplotlib = "*"
