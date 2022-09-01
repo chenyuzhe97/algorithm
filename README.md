@@ -57,12 +57,15 @@ PIPENV_CLEAR=0
     - 使用 scoop 安装 anaconda3 或者 miniconda3（不要使用 dorado 库，有问题）
 - 创建环境
     - `conda env create -f conda.yaml`
+
 ### 使用 Poetry 管理环境
 ---
+
 - 推荐使用conda创建虚拟环境
 - 或者使用poetry创建环境：`poetry env create -f poetry.toml`
 - 安装poetry：`pip install poetry`
 - 安装依赖环境：`poetry install`
+
 ## 激活环境
 
 ### Pipenv
