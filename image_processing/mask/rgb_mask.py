@@ -37,7 +37,7 @@ def handle_image(image_path, bgr_min_b, bgr_max_b, bgr_min_g, bgr_max_g, bgr_min
     mask_bgr = np.zeros(img_bgr.shape[:2], dtype=np.uint8)
     for i in range(3):
         # mask[np.where(np.logical_and(lowers[i]<=img[:,:,i],img[:,:,i]<=uppers[i]))] = 0
-        mask_bgr[np.where(np.logical_and(bgr_lowers[i] < img_bgr[:, :, i], img_bgr[:, :, i] < bgr_uppers[i]))] = 255
+        mask_bgr[np.where(np.logical_and(bgr_lowers[i] <= img_bgr[:, :, i], img_bgr[:, :, i] <= bgr_uppers[i]))] = 255
     # 计算HSV MASK
     mask_hsv = cv2.inRange(img_hsv, hsv_lowers, hsv_uppers)
     # 合并RGB和HSV MASK
@@ -45,7 +45,7 @@ def handle_image(image_path, bgr_min_b, bgr_max_b, bgr_min_g, bgr_max_g, bgr_min
     mask = cv2.bitwise_and(mask_bgr, mask_hsv)
     mask = cv2.bitwise_not(mask)
     for i in range(3):
-        target[mask == 255, i] = 0
+        target[mask == 0, i] = 0
     # 保存结果
     dir_path = os.path.dirname(image_path)
     image_name = os.path.basename(image_path)

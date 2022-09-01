@@ -19,21 +19,30 @@ import click
 import cv2
 import numpy as np
 
+global img
+global img_bgr
+global img_hsv
+global mask
+global target
+
 
 def update_mask(bgr_lowers, bgr_uppers, hsv_lowers, hsv_uppers):
     # 计算RGB MASK
     mask_bgr = np.zeros(img.shape[:2], dtype=np.uint8)
     for i in range(3):
         # mask[np.where(np.logical_and(lowers[i]<=img[:,:,i],img[:,:,i]<=uppers[i]))] = 0
-        mask_bgr[np.where(np.logical_and(bgr_lowers[i] < img[:, :, i], img[:, :, i] < bgr_uppers[i]))] = 255
+        mask_bgr[np.where(np.logical_and(bgr_lowers[i] <= img[:, :, i], img[:, :, i] <= bgr_uppers[i]))] = 255
     # 计算HSV MASK
     mask_hsv = cv2.inRange(img_hsv, hsv_lowers, hsv_uppers)
     # 合并RGB和HSV MASK
+
+    global mask
+    global target
     target = img.copy()
     mask = cv2.bitwise_and(mask_bgr, mask_hsv)
     mask = cv2.bitwise_not(mask)
     for i in range(3):
-        target[mask == 255, i] = 0
+        target[mask == 0, i] = 0
     # 展示结果
     cv2.imshow('mask', mask)
     cv2.imshow('target', target)
@@ -119,7 +128,7 @@ def main(image_path, bgr_min_b, bgr_max_b, bgr_min_g, bgr_max_g, bgr_min_r, bgr_
          hsv_min_s, hsv_max_s, hsv_min_v, hsv_max_v):
     global img
     img = cv2.imread(image_path)
-    img = cv2.resize(img, (int(img.shape[1] / 2), int(img.shape[0] / 2)), interpolation=cv2.INTER_CUBIC)
+    # img = cv2.resize(img, (int(img.shape[1] / 2), int(img.shape[0] / 2)), interpolation=cv2.INTER_CUBIC)
 
     global img_bgr
     img_bgr = img.copy()
@@ -128,16 +137,27 @@ def main(image_path, bgr_min_b, bgr_max_b, bgr_min_g, bgr_max_g, bgr_min_r, bgr_
     img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
     cv2.namedWindow('tool_bar', flags=cv2.WINDOW_NORMAL | cv2.WINDOW_FREERATIO)
+    cv2.namedWindow('mask')
+    cv2.namedWindow('target')
     adjust(bgr_min_b, bgr_max_b, bgr_min_g, bgr_max_g, bgr_min_r, bgr_max_r, hsv_min_h, hsv_max_h,
            hsv_min_s, hsv_max_s, hsv_min_v, hsv_max_v)
-    print("调整阈值, 按q键退出程序")
-    while cv2.waitKey(0) != ord('q'):
-        continue
+    print("调整阈值, 按q键退出程序, 按s键保存图片")
+    stop = False
+    while not stop:
+        key = cv2.waitKey(0)
+        if key == ord('q'):
+            stop = True
+        if key == ord('s'):
+            dir_path = os.path.dirname(image_path)
+            image_name = os.path.basename(image_path)
+            print(f'{image_name}保存图片到{dir_path}')
+            cv2.imwrite(os.path.join(dir_path, 'mask_' + image_name), mask)
+            cv2.imwrite(os.path.join(dir_path, 'target_' + image_name), target)
     cv2.destroyAllWindows()
 
 
 if __name__ == '__main__':
     """
-    示例：python ./image_processing/mask/rgb_mask_gui.py 图片绝对路径
+    示例：python ./image_processing/mask/rgb_mask_gui.py 图片绝对路径 --hsv_min_h=3 --hsv_max_h=30 --hsv_min_s=60 --hsv_max_s=180 --hsv_min_v=40 --hsv_max_v=255
     """
     main()
