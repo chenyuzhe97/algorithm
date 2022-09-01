@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 """
 @File Name      :   __init__.py    
-@Create Time    :   2021/9/22 19:48
+@Create Time    :   2022/9/1 9:52
 @Description    :   
 @Version        :   
-@License        :   
+@License        :   MIT
 @Author         :   diklios
 @Contact Email  :   diklios5768@gmail.com
 @Github         :   https://github.com/diklios5768
