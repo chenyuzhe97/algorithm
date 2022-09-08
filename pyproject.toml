@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "algorithm"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["diklios <47837462+diklios5768@users.noreply.github.com>"]
 license = "MIT"
@@ -15,6 +15,7 @@ tqdm = "^4.64.0"
 pandas = "^1.4.3"
 openpyxl = "^3.0.10"
 xlsxwriter = "^3.0.3"
+prettytable = "^3.4.1"
 # jupyter
 jupyterlab = "^3.4.5"
 notebook = "^6.4.12"
@@ -67,6 +68,12 @@ cmd = "pip install torch --upgrade --extra-index-url https://download.pytorch.or
 args = [
     { name = "CUDA", default = "cu116", positional = true, help = "CUDA version" }
 ]
+
+[tool.poe.tasks.R]
+cmd = "conda install r-irkernel -c r -y"
+
+[tool.poe.tasks.cplusplus]
+cmd = "conda install xeus-cling -c conda-forge -y"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
