@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "algorithm"
 version = "0.2.0"
-description = ""
+description = "multi "
 authors = ["diklios <47837462+diklios5768@users.noreply.github.com>"]
 license = "MIT"
 
@@ -57,8 +57,8 @@ torchkeras = "^3.2.3"
 torchsampler = "^0.1.2"
 
 [tool.poetry.group.openmmlab.dependencies]
-
-
+openmim = "^0.3.1"
+mmgen = "^0.7.1"
 
 [tool.poetry.group.tensorflow.dependencies]
 tensorflow = "^2.9.1"
@@ -68,6 +68,15 @@ cmd = "pip install torch --upgrade --extra-index-url https://download.pytorch.or
 args = [
     { name = "CUDA", default = "cu116", positional = true, help = "CUDA version" }
 ]
+
+[tool.poe.tasks.torch-gpu-conda]
+cmd = "conda install pytorch torchvision torchaudio cudatoolkit=${CUDA} -c pytorch -c conda-forge"
+args = [
+    { name = "CUDA", default = "11.6", positional = true, help = "CUDA version" }
+]
+
+[tool.poe.tasks.mmcv]
+cmd = "mim install mmcv-full"
 
 [tool.poe.tasks.R]
 cmd = "conda install r-irkernel -c r -y"
