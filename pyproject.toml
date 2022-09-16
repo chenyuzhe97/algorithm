@@ -47,9 +47,9 @@ scikit-image = "^0.19.3"
 keras = "^2.9.0"
 scipy = "^1.8.1"
 sympy = "^1.10.1"
-wandb = "^0.13.3"
 
 [tool.poetry.group.dl.dependencies]
+wandb = "^0.13.3"
 tensorboard = "^2.10.0"
 tensorboardX = "^2.5.1"
 
