@@ -18,12 +18,17 @@ xlsxwriter = "^3.0.3"
 prettytable = "^3.4.1"
 # jupyter
 jupyterlab = "^3.4.5"
+jupyter = "^1.0.0"
 notebook = "^6.4.12"
 # fig
 matplotlib = "^3.5.3"
 seaborn = "^0.11.2"
 # poetry plugin
 poethepoet = "^0.16.2"
+# HTML
+dominate = "^2.7.0"
+visdom = "^0.1.8.9"
+
 
 [tool.poetry.group.doc.dependencies]
 python-docx = "^0.8.11"
@@ -42,9 +47,11 @@ scikit-image = "^0.19.3"
 keras = "^2.9.0"
 scipy = "^1.8.1"
 sympy = "^1.10.1"
+wandb = "^0.13.3"
 
 [tool.poetry.group.dl.dependencies]
 tensorboard = "^2.10.0"
+tensorboardX = "^2.5.1"
 
 [tool.poetry.group.torch.dependencies]
 torchvision = "^0.13.0"
