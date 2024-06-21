@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 """
-@File Name      :   statisitc.py    
+@File Name      :   distribution.py
 @Create Time    :   2022/8/31 11:45
 @Description    :   
 @Version        :   
